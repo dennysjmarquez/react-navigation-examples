@@ -1,17 +1,28 @@
 {
-  "name": "test-react-navigation",
-  "description": "An empty new project",
-  "slug": "test-react-navigation",
+  "name": "react-navigation-seed",
+  "description": "Seed project to setup a project with react-navigation",
+  "slug": "react-navigation-seed",
   "privacy": "public",
   "sdkVersion": "13.0.0",
   "version": "1.0.0",
   "orientation": "portrait",
-  "primaryColor": "#cccccc",
-  "icon": "https://s3.amazonaws.com/exp-brand-assets/ExponentEmptyManifest_192.png",
-  "loading": {
-    "icon": "https://s3.amazonaws.com/exp-brand-assets/ExponentEmptyManifest_192.png",
-    "hideExponentText": false
+  "primaryColor": "#3A4767",
+  "icon": "https://s13.postimg.org/wflosfalj/logo.png",
+  "notification": {
+    "icon": "https://s13.postimg.org/wflosfalj/logo.png",
+    "color": "#000000",
+    "androidMode": "default",
+    "androidCollapsedTitle": "#{unread_notifications} new interactions"
   },
+  "loading": {
+    "icon": "https://s13.postimg.org/wflosfalj/logo.png",
+    "backgroundImage": "http://i.imgur.com/zsnPy5z.png",
+    "backgroundColor": "#FFF",
+    "hideExponentText": true
+  },
+  "appKey": "main",
+  "androidStatusBarColor": "#000000",
+  "androidHideExponentNotificationInShellApp": true,
   "packagerOpts": {
     "assetExts": ["ttf", "mp4"]
   },

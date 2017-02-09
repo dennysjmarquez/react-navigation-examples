@@ -6,7 +6,7 @@ class OtherScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <OtherComponent text={'Hey i\'m a Stacked screen!'} />
+        <OtherComponent text={'Hey I\'m a Stacked screen!'} />
       </View>
     );
   }

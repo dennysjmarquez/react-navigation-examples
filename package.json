@@ -1,7 +1,7 @@
 {
-  "name": "test-react-navigation",
+  "name": "react-navigation-seed",
   "version": "0.0.0",
-  "description": "Hello Exponent!",
+  "description": "Seed project to setup a project with react-navigation",
   "author": null,
   "private": true,
   "main": "main.js",
