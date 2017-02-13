@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
   link: {
     color: '#3498db',
     fontSize: 16,
-    // fontWeight: '500',
-    paddingRight: 10
+    fontWeight: '500',
+    padding: 15
   }
 });
 

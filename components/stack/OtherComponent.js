@@ -51,13 +51,15 @@ const styles = StyleSheet.create({
   text: {
     color: '#242134',
     textAlign: 'center',
-    padding: 15
+    fontSize: 16
   },
 
   link: {
     color: '#242134',
     textAlign: 'center',
-    fontWeight: '900'
+    fontSize: 16,
+    fontWeight: '900',
+    padding: 15
   }
 });
 

@@ -1,20 +1,42 @@
 import React from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, Text, Button,
+         Image, StyleSheet } from 'react-native';
 
 class MenuScreen extends React.Component {
   constructor(props) {
     super(props);
 
     this.goToStackNavigationExample = this.goToStackNavigationExample.bind(this);
+    this.goToTabNavigationExample = this.goToTabNavigationExample.bind(this);
   }
 
   goToStackNavigationExample() {
     this.props.navigation.navigate('Stack')
   }
 
+  goToTabNavigationExample() {
+    this.props.navigation.navigate('Tab')
+  }
+
   render() {
     return (
       <View style={styles.container}>
+        <View style={styles.titleContainer}>
+          <Image
+            style={styles.image}
+            source={require('../assets/images/logo.png')}
+            alt={'logo'}
+          />
+
+          <Text style={styles.title}>
+            React Navigation examples
+          </Text>
+
+          <Text style={styles.subtitle}>
+            by rmotr.com
+          </Text>
+        </View>
+
         <View style={styles.buttonContainer}>
           <Button
             onPress={this.goToStackNavigationExample}
@@ -25,7 +47,7 @@ class MenuScreen extends React.Component {
 
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this.goToStackNavigationExample}
+            onPress={this.goToTabNavigationExample}
             color={'#2ecc71'}
             title="Tab navigation example"
           />
@@ -33,7 +55,7 @@ class MenuScreen extends React.Component {
 
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this.goToStackNavigationExample}
+            onPress={() => {}}
             color={'#e74c3c'}
             title="Drawer navigation example"
           />
@@ -53,10 +75,29 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    alignItems: 'stretch'
+    alignItems: 'center',
+    borderBottomWidth: 15,
+    borderColor: '#242134'
+  },
+  titleContainer: {
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    alignItems: 'center'
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: '500'
+  },
+  subtitle: {
+    fontSize: 14,
+    fontStyle: 'italic'
+  },
+  image: {
+    width: 120,
+    height: 120
   },
   buttonContainer: {
-    margin: 10
+    marginHorizontal: 20
   }
 });
 

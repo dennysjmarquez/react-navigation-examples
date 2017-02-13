@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableHighlight, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableHighlight, Image, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class MainComponent extends React.Component {
@@ -51,13 +51,15 @@ const styles = StyleSheet.create({
   text: {
     color: '#242134',
     textAlign: 'center',
-    padding: 15
+    fontSize: 16
   },
 
   link: {
     color: '#242134',
     textAlign: 'center',
-    fontWeight: '900'
+    fontSize: 16,
+    fontWeight: '900',
+    padding: 15
   }
 });
 
