@@ -1,7 +1,7 @@
 {
-  "name": "react-navigation-seed",
+  "name": "react-navigation-examples",
   "version": "0.0.0",
-  "description": "Seed project to setup a project with react-navigation",
+  "description": "Examples to setup a project with react-navigation",
   "author": null,
   "private": true,
   "main": "main.js",
@@ -11,5 +11,10 @@
     "react": "~15.4.0",
     "react-native": "https://github.com/exponent/react-native/archive/sdk-13.0.3.tar.gz",
     "react-navigation": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "eslint-config-rmotr": "0.0.5",
+    "eslint-plugin-react": "^6.4.1"
   }
 }

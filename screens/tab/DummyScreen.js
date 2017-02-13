@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import DummyComponent from '../../components/tab/DummyComponent';
 
 class DummyScreen extends React.Component {
@@ -14,6 +14,12 @@ class DummyScreen extends React.Component {
 
 DummyScreen.navigationOptions = {
   // title: 'Tab2'
+  tabBar: {
+    label: 'Tab2',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
+  }
 };
 
 const styles = StyleSheet.create({

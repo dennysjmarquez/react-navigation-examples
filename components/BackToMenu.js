@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableHighlight, StyleSheet, Image } from 'react-native';
+import { Text, TouchableHighlight, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class BackToMenu extends React.Component {
@@ -11,7 +11,7 @@ class BackToMenu extends React.Component {
 
   goToMenu() {
     // Go back anywhere
-    this.props.navigation.goBack(null)
+    this.props.navigation.goBack(null);
   }
 
   render() {

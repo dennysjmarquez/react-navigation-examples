@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import FooComponent from '../../components/drawer/FooComponent';
 
 class FooScreen extends React.Component {
@@ -13,7 +13,13 @@ class FooScreen extends React.Component {
 }
 
 FooScreen.navigationOptions = {
-  // title: 'Drawer2'
+  // title: 'Drawer2',
+  drawer: {
+    label: 'Drawer2',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
+  }
 };
 
 const styles = StyleSheet.create({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import MainComponent from '../../components/stack/MainComponent';
 import BackToMenu from '../../components/BackToMenu';
 
@@ -18,6 +18,20 @@ MainScreen.navigationOptions = {
     title: 'Screen 1',
     right: <BackToMenu />,
     tintColor: '#3498db'
+  },
+  // only to Tab navigation example
+  tabBar: {
+    label: 'Tab1',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
+  },
+  // only to Drawer navigation example
+  drawer: {
+    label: 'Drawer1',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
   }
 };
 

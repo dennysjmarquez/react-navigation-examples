@@ -4,23 +4,25 @@ import Stack from './Stack';
 import Tab from './Tab';
 import Drawer from './Drawer';
 
-const MenuNavigator = StackNavigator({
-  Menu: {
-    screen: MenuScreen,
+const MenuNavigator = StackNavigator(
+  {
+    Menu: {
+      screen: MenuScreen
+    },
+    StackExample: {
+      screen: Stack
+    },
+    TabExample: {
+      screen: Tab
+    },
+    DrawerExample: {
+      screen: Drawer
+    }
   },
-  StackExample: {
-    screen: Stack
-  },
-  TabExample: {
-    screen: Tab
-  },
-  DrawerExample: {
-    screen: Drawer
+  {
+    initialRouteName: 'Menu',
+    headerMode: 'none'
   }
-},
-{
-  initialRouteName: 'Menu',
-  headerMode: 'none'
-});
+);
 
 export default MenuNavigator;

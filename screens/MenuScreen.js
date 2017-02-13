@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, Button,
-         Image, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import MenuHeader from '../components/MenuHeader';
+import LinkToExample from '../components/LinkToExample';
 
 class MenuScreen extends React.Component {
   constructor(props) {
@@ -12,59 +13,39 @@ class MenuScreen extends React.Component {
   }
 
   goToStackNavigationExample() {
-    this.props.navigation.navigate('StackExample')
+    this.props.navigation.navigate('StackExample');
   }
 
   goToTabNavigationExample() {
-    this.props.navigation.navigate('TabExample')
+    this.props.navigation.navigate('TabExample');
   }
 
   goToDrawerNavigationExample() {
-    this.props.navigation.navigate('DrawerExample')
+    this.props.navigation.navigate('DrawerExample');
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.titleContainer}>
-          <Image
-            style={styles.image}
-            source={require('../assets/images/logo.png')}
-            alt={'logo'}
-          />
+        <MenuHeader />
 
-          <Text style={styles.title}>
-            React Navigation examples
-          </Text>
+        <LinkToExample
+          title={'Stack navigation example'}
+          color={'#3498db'}
+          onPress={this.goToStackNavigationExample}
+        />
 
-          <Text style={styles.subtitle}>
-            by rmotr.com
-          </Text>
-        </View>
+        <LinkToExample
+          title={'Tab navigation example'}
+          color={'#2ecc71'}
+          onPress={this.goToTabNavigationExample}
+        />
 
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToStackNavigationExample}
-            color={'#3498db'}
-            title="Stack navigation example"
-          />
-        </View>
-
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToTabNavigationExample}
-            color={'#2ecc71'}
-            title="Tab navigation example"
-          />
-        </View>
-
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToDrawerNavigationExample}
-            color={'#e74c3c'}
-            title="Drawer navigation example"
-          />
-        </View>
+        <LinkToExample
+          title={'Drawer navigation example'}
+          color={'#e74c3c'}
+          onPress={this.goToDrawerNavigationExample}
+        />
       </View>
     );
   }
@@ -83,26 +64,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 15,
     borderColor: '#242134'
-  },
-  titleContainer: {
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    alignItems: 'center'
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: '500'
-  },
-  subtitle: {
-    fontSize: 14,
-    fontStyle: 'italic'
-  },
-  image: {
-    width: 120,
-    height: 120
-  },
-  buttonContainer: {
-    marginHorizontal: 20
   }
 });
 
