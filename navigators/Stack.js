@@ -3,15 +3,15 @@ import MainScreen from '../screens/stack/MainScreen';
 import OtherScreen from '../screens/stack/OtherScreen';
 
 const Stack = StackNavigator({
-  Main: {
+  Stack1: {
     screen: MainScreen,
   },
-  Other: {
+  Stack2: {
     screen: OtherScreen,
   }
 },
 {
-  initialRouteName: 'Main'
+  initialRouteName: 'Stack1'
 });
 
 export default Stack;

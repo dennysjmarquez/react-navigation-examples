@@ -1,17 +1,20 @@
 import { TabNavigator, StackNavigator } from 'react-navigation';
-import MainScreen from '../screens/stack/MainScreen';
-import OtherScreen from '../screens/stack/OtherScreen';
+import DummyScreen from '../screens/tab/DummyScreen';
+import Stack from './Stack';
 
 const Tab = TabNavigator({
-  Main: {
-    screen: MainScreen,
+  Tab1: {
+    screen: Stack,
   },
-  Other: {
-    screen: OtherScreen,
+  Tab2: {
+    screen: DummyScreen,
   }
 },
 {
-  initialRouteName: 'Main'
+  swipeEnabled: true,
+  tabBarOptions: {
+    // activeTintColor: '#e91e63'
+  }
 });
 
 export default Tab;
