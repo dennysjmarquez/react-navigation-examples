@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import OtherComponent from '../../components/stack/OtherComponent';
 import BackToMenu from '../../components/BackToMenu';
 
@@ -14,10 +14,25 @@ class OtherScreen extends React.Component {
 }
 
 OtherScreen.navigationOptions = {
+  title: 'Screen 2',
+  // title: state => 'Screen 2',
   header: {
-    title: 'Screen 2',
     right: <BackToMenu />,
     tintColor: '#3498db'
+  },
+  // only to Tab navigation example
+  tabBar: {
+    label: 'Tab1',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
+  },
+  // only to Drawer navigation example
+  drawer: {
+    label: 'Drawer1',
+    icon: () => (
+      <Image source={require('../../assets/images/icon.png')} />
+    )
   }
 };
 
