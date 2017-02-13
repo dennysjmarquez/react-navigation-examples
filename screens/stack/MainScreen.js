@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import MainComponent from '../components/MainComponent';
+import MainComponent from '../../components/stack/MainComponent';
 
 class MainScreen extends React.Component {
   render() {
@@ -13,7 +13,8 @@ class MainScreen extends React.Component {
 }
 
 MainScreen.navigationOptions = {
-  title: 'Tab 1 - Screen 1'
+  title: 'Tab 1 - Screen 1',
+  visible: false
 };
 
 const styles = StyleSheet.create({

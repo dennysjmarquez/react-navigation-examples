@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import OtherComponent from '../components/OtherComponent';
+import OtherComponent from '../../components/stack/OtherComponent';
 
 class OtherScreen extends React.Component {
   render() {
