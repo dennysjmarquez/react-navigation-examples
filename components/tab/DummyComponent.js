@@ -10,9 +10,7 @@ class DummyComponent extends React.Component {
   }
 
   goToTab() {
-    this.props.navigation.performAction(({ tabs }) => {
-      tabs('tab-navigation').jumpToTab('main');
-    });
+    this.props.navigation.navigate('Tab1')
   }
 
   render() {

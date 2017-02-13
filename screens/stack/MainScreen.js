@@ -7,7 +7,7 @@ class MainScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <MainComponent text={'Open up MainComponent.js to start working on your app!'} />
+        <MainComponent text={'Open up stack/MainComponent.js to start working on your app!'} />
       </View>
     );
   }

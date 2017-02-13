@@ -10,7 +10,7 @@ class MainComponent extends React.Component {
   }
 
   goToStack() {
-    this.props.navigation.navigate('Other')
+    this.props.navigation.navigate('Stack2')
   }
 
   render() {

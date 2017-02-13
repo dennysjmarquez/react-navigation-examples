@@ -7,10 +7,10 @@ const MenuNavigator = StackNavigator({
   Menu: {
     screen: MenuScreen,
   },
-  Stack: {
+  StackExample: {
     screen: Stack
   },
-  Tab: {
+  TabExample: {
     screen: Tab
   }
 },

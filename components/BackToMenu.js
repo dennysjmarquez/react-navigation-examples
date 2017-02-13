@@ -10,7 +10,8 @@ class BackToMenu extends React.Component {
   }
 
   goToMenu() {
-    this.props.navigation.goBack()
+    // Go back anywhere
+    this.props.navigation.goBack(null)
   }
 
   render() {

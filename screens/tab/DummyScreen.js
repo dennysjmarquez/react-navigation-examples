@@ -13,13 +13,7 @@ class DummyScreen extends React.Component {
   }
 }
 
-DummyScreen.navigationOptions = {
-  header: {
-    title: 'Screen 3',
-    right: <BackToMenu />,
-    tintColor: '#3498db'
-  }
-};
+DummyScreen.navigationOptions = {};
 
 const styles = StyleSheet.create({
   container: {

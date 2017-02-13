@@ -12,8 +12,9 @@ const Tab = TabNavigator({
 },
 {
   swipeEnabled: true,
+  animationEnabled: true,
   tabBarOptions: {
-    // activeTintColor: '#e91e63'
+    activeTintColor: '#e91e63'
   }
 });
 

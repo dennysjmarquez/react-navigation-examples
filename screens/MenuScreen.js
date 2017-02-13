@@ -11,11 +11,11 @@ class MenuScreen extends React.Component {
   }
 
   goToStackNavigationExample() {
-    this.props.navigation.navigate('Stack')
+    this.props.navigation.navigate('StackExample')
   }
 
   goToTabNavigationExample() {
-    this.props.navigation.navigate('Tab')
+    this.props.navigation.navigate('TabExample')
   }
 
   render() {
