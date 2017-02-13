@@ -14,7 +14,17 @@ const Tab = TabNavigator({
   swipeEnabled: true,
   animationEnabled: true,
   tabBarOptions: {
-    activeTintColor: '#e91e63'
+    activeTintColor: '#e91e63',
+    inactiveTintColor: '#AAA',
+    activeBackgroundColor: '#FFF', // iOS
+    inactiveBackgroundColor: '#DDD', // iOS
+    pressColor: '#e91e63', // Android
+    indicatorStyle: { // Android
+      backgroundColor: '#242134'
+    },
+    style: {
+      backgroundColor: '#EEE', // Android
+    }
   }
 });
 

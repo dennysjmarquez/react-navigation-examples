@@ -13,7 +13,9 @@ class DummyScreen extends React.Component {
   }
 }
 
-DummyScreen.navigationOptions = {};
+DummyScreen.navigationOptions = {
+  title: 'Tab2'
+};
 
 const styles = StyleSheet.create({
   container: {
