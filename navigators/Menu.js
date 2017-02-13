@@ -1,6 +1,5 @@
 import { StackNavigator } from 'react-navigation';
 import MenuScreen from '../screens/MenuScreen';
-import StackMainScreen from '../screens/stack/MainScreen';
 import Stack from './Stack';
 
 const MenuNavigator = StackNavigator({
@@ -10,6 +9,10 @@ const MenuNavigator = StackNavigator({
   Stack: {
     screen: Stack
   }
+},
+{
+  initialRouteName: 'Menu',
+  headerMode: 'none'
 });
 
 export default MenuNavigator;

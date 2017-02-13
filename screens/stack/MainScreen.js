@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import MainComponent from '../../components/stack/MainComponent';
+import BackToMenu from '../../components/BackToMenu';
 
 class MainScreen extends React.Component {
   render() {
@@ -13,8 +14,11 @@ class MainScreen extends React.Component {
 }
 
 MainScreen.navigationOptions = {
-  title: 'Tab 1 - Screen 1',
-  visible: false
+  header: {
+    title: 'Screen 1',
+    right: <BackToMenu />,
+    tintColor: '#3498db'
+  }
 };
 
 const styles = StyleSheet.create({

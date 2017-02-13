@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet } from 'react-native';
 
 class MenuScreen extends React.Component {
   constructor(props) {
@@ -15,23 +15,29 @@ class MenuScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={this.goToStackNavigationExample} >
-          <Text style={styles.text}>
-            Stack navigation example
-          </Text>
-        </TouchableOpacity>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToStackNavigationExample}
+            color={'#3498db'}
+            title="Stack navigation example"
+          />
+        </View>
 
-        <TouchableOpacity onPress={() => {console.log('asd')}}>
-          <Text style={styles.text}>
-            Tab navigation example
-          </Text>
-        </TouchableOpacity>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToStackNavigationExample}
+            color={'#2ecc71'}
+            title="Tab navigation example"
+          />
+        </View>
 
-        <TouchableOpacity onPress={() => {console.log('asd')}}>
-          <Text style={styles.text}>
-            Drawer navigation example
-          </Text>
-        </TouchableOpacity>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToStackNavigationExample}
+            color={'#e74c3c'}
+            title="Drawer navigation example"
+          />
+        </View>
       </View>
     );
   }
@@ -44,23 +50,13 @@ MenuScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#FFF',
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'stretch'
   },
-  text: {
-    color: '#444',
-    backgroundColor: '#FFF',
-    fontSize: 18,
-    fontWeight: '600',
-    borderWidth: 1,
-    borderColor: '#DDD',
-    borderBottomWidth: 0,
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 1,
-    padding: 20
+  buttonContainer: {
+    margin: 10
   }
 });
 
