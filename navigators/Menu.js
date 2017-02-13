@@ -4,7 +4,7 @@ import Stack from './Stack';
 import Tab from './Tab';
 import Drawer from './Drawer';
 
-const MenuNavigator = StackNavigator(
+const NavigatorMenu = StackNavigator(
   {
     Menu: {
       screen: MenuScreen
@@ -25,4 +25,4 @@ const MenuNavigator = StackNavigator(
   }
 );
 
-export default MenuNavigator;
+export default NavigatorMenu;

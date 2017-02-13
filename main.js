@@ -1,11 +1,11 @@
 import Exponent from 'exponent';
 import React from 'react';
-import MenuNavigator from './navigators/Menu';
+import Menu from './navigators/Menu';
 
 class App extends React.Component {
   render() {
     return (
-      <MenuNavigator />
+      <Menu />
     );
   }
 }
