@@ -8,6 +8,7 @@ class MenuScreen extends React.Component {
 
     this.goToStackNavigationExample = this.goToStackNavigationExample.bind(this);
     this.goToTabNavigationExample = this.goToTabNavigationExample.bind(this);
+    this.goToDrawerNavigationExample = this.goToDrawerNavigationExample.bind(this);
   }
 
   goToStackNavigationExample() {
@@ -16,6 +17,10 @@ class MenuScreen extends React.Component {
 
   goToTabNavigationExample() {
     this.props.navigation.navigate('TabExample')
+  }
+
+  goToDrawerNavigationExample() {
+    this.props.navigation.navigate('DrawerExample')
   }
 
   render() {
@@ -55,7 +60,7 @@ class MenuScreen extends React.Component {
 
         <View style={styles.buttonContainer}>
           <Button
-            onPress={() => {}}
+            onPress={this.goToDrawerNavigationExample}
             color={'#e74c3c'}
             title="Drawer navigation example"
           />

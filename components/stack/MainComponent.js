@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableHighlight, Image, StyleSheet } from 'react-native';
+import { View, Text, Button, Image, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class MainComponent extends React.Component {
@@ -26,11 +26,13 @@ class MainComponent extends React.Component {
           {this.props.text}
         </Text>
 
-        <TouchableHighlight onPress={this.goToStack} >
-          <Text style={styles.link}>
-            Touch me to change stack!
-          </Text>
-        </TouchableHighlight>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToStack}
+            color={'#242134'}
+            title="Add stack!"
+          />
+        </View>
       </View>
     );
   }
@@ -54,11 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
 
-  link: {
-    color: '#242134',
-    textAlign: 'center',
-    fontSize: 16,
-    fontWeight: '900',
+  buttonContainer: {
     padding: 15
   }
 });

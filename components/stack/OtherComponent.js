@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableHighlight, StyleSheet, Image } from 'react-native';
+import { View, Text, Button, Image, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class OtherComponent extends React.Component {
@@ -26,11 +26,13 @@ class OtherComponent extends React.Component {
           {this.props.text}
         </Text>
 
-        <TouchableHighlight onPress={this.goBack} >
-          <Text style={styles.link}>
-            Touch me to go back!
-          </Text>
-        </TouchableHighlight>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goBack}
+            color={'#242134'}
+            title="Go back!"
+          />
+        </View>
       </View>
     );
   }
@@ -54,11 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
 
-  link: {
-    color: '#242134',
-    textAlign: 'center',
-    fontSize: 16,
-    fontWeight: '900',
+  buttonContainer: {
     padding: 15
   }
 });

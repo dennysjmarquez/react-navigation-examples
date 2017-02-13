@@ -2,15 +2,15 @@ import React from 'react';
 import { View, Text, Button, Image, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
-class DummyComponent extends React.Component {
+class FooComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    this.goToTab = this.goToTab.bind(this);
+    this.toggleDrawer = this.toggleDrawer.bind(this);
   }
 
-  goToTab() {
-    this.props.navigation.navigate('Tab1')
+  toggleDrawer() {
+    this.props.navigation.navigate('DrawerOpen')
   }
 
   render() {
@@ -28,9 +28,9 @@ class DummyComponent extends React.Component {
 
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this.goToTab}
+            onPress={this.toggleDrawer}
             color={'#242134'}
-            title="Change tab!"
+            title="Open drawer!"
           />
         </View>
       </View>
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default withNavigation(DummyComponent);
+export default withNavigation(FooComponent);

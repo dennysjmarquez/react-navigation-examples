@@ -1,29 +1,29 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import DummyComponent from '../../components/tab/DummyComponent';
+import FooComponent from '../../components/drawer/FooComponent';
 
-class DummyScreen extends React.Component {
+class FooScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <DummyComponent text={'This is another screen, on 2nd tab!'} />
+        <FooComponent text={'This is another screen, on 2nd drawer option!'} />
       </View>
     );
   }
 }
 
-DummyScreen.navigationOptions = {
-  // title: 'Tab2'
+FooScreen.navigationOptions = {
+  // title: 'Drawer2'
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(0, 255, 0, 0.4)',
+    backgroundColor: 'rgba(0, 255, 255, 0.4)',
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'stretch'
   }
 });
 
-export default DummyScreen;
+export default FooScreen;

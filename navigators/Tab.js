@@ -1,4 +1,4 @@
-import { TabNavigator, StackNavigator } from 'react-navigation';
+import { TabNavigator } from 'react-navigation';
 import DummyScreen from '../screens/tab/DummyScreen';
 import Stack from './Stack';
 
@@ -11,6 +11,7 @@ const Tab = TabNavigator({
   }
 },
 {
+  initialRouteName: 'Tab1',
   swipeEnabled: true,
   animationEnabled: true,
   tabBarOptions: {
