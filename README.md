@@ -13,6 +13,12 @@ _(https://www.npmjs.com/package/exp)_
 $ npm install -g exp
 ```
 
+##### Signup for an Exponent account:
+
+```sh
+$ exp signup
+```
+
 ##### Login to exponent:
 
 ```sh
@@ -23,12 +29,13 @@ $ exp w  # who am I?
 ##### Clone this repo
 
 ```sh
-$ git clone https://github.com/rmotr/react-navigation-seed.git
+$ git clone https://github.com/rmotr/exponent-react-native-seed.git
 ```
 
-##### Init dependencies:
+##### Install dependencies:
 
 ```sh
+$ cd exponent-react-native-seed
 $ npm install -d
 ```
 
@@ -85,3 +92,37 @@ $ exp status -a
 ```sh
 $ exp stop
 ```
+
+##### Running your app in device simulators
+
+Once you have the correct simulator(s) installed in your platform, firing them up and running your app with them is simple. The hard part is usually installing them. Supposing that you've your simulator(s) correctly installed, starting it is as simple as:
+
+```sh
+$ exp ios
+$ exp android
+```
+
+# Simulators
+
+If you're on a mac (OS X) you'll have access to both iOS and Android simulators. If you're on PC or Linux you'll have access just to Android simulator.
+
+## Android Simulator (Genymotion)
+
+Setting up Genymotion is usually simple, but it takes some time. It's a boring process 😪. The easiest way to do it is by following Genymotion's official Install guide that has good details depending on your platform: [https://docs.genymotion.com/Content/01_Get_Started/Installation.htm](https://docs.genymotion.com/Content/01_Get_Started/Installation.htm). Once you have Genymotion installed, click on "Add Device":
+
+![image](https://cloud.githubusercontent.com/assets/872296/20842160/54369770-b895-11e6-8fed-00d6bd76ca2c.png)
+
+And select a device with Android version >= 4.4:
+
+![image](https://cloud.githubusercontent.com/assets/872296/20842189/6e238a12-b895-11e6-99f8-c4c778b1fe57.png)
+
+Once it's created, start it from Genymotion:
+
+![image](https://cloud.githubusercontent.com/assets/872296/20842208/96a953d6-b895-11e6-9e29-1a5d44b032f1.png)
+
+
+## iOS Simulator
+
+First you'll have to install XCode (if not previously installed). The easiest way to do it is through itunes: [https://itunes.apple.com/app/xcode/id497799835](https://itunes.apple.com/app/xcode/id49779983). It'll take a while, go have a nap. Next, open up Xcode, go to _preferences_ and click the _Components_ tab, install a simulator from the list:
+
+![Simulator List](https://docs.getexponent.com/_static/img/xcode-simulator.png)
