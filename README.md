@@ -33,13 +33,13 @@ $ exp w  # who am I?
 ##### Clone this repo
 
 ```sh
-$ git clone https://github.com/rmotr/exponent-react-native-seed.git
+$ git clone https://github.com/rmotr/react-native-exponent-seed.git
 ```
 
 ##### Install dependencies:
 
 ```sh
-$ cd exponent-react-native-seed
+$ cd react-native-exponent-seed
 $ npm install -d
 ```
 
@@ -52,7 +52,7 @@ Exponent works based on the current directory of your project. Execute all the f
 If you use this option, you'll be able to share your app with anyone in the world. You'll be given a URL that you can share with your users. Your user will need the Exponent Mobile app installed in his/her device (Android +4.4, iOS +8).
 
 ```sh
-$ exp start --tunnel --exp --dev --qr
+$ exp start --tunnel --exp --dev
 ```
 
 ![image](https://cloud.githubusercontent.com/assets/872296/20674838/11733e7c-b569-11e6-88b6-1d6755efb35b.png)
@@ -63,7 +63,7 @@ This method will allow you to share your app just with people connected to the s
 
 
 ```sh
-$ exp start --lan --exp --dev --qr
+$ exp start --lan --exp --dev
 ```
 
 ##### Starting app with a local simulator
@@ -71,30 +71,7 @@ $ exp start --lan --exp --dev --qr
 To use this method you'll need to have a Simulator installed (either iOS or Android). Refer to [Exponent's docs](https://docs.getexponent.com/versions/v11.0.0/guides/debugging.html#using-a-simulator-emulator) for more about simulators.
 
 ```sh
-$ exp start --lan --exp --dev --qr
-```
-
-
-##### Watching Logs
-
-```sh
-$ exp logs
-```
-
-![image](https://cloud.githubusercontent.com/assets/872296/20674915/557d92d4-b569-11e6-8f58-4652bddc9bdb.png)
-
-##### Status of your app
-
-```sh
-$ exp status -a
-```
-
-![image](https://cloud.githubusercontent.com/assets/872296/20675345/b8bf3234-b56a-11e6-8f57-832a09528e15.png)
-
-##### Stop your app
-
-```sh
-$ exp stop
+$ exp start --lan --exp --dev
 ```
 
 ##### Running your app in device simulators
@@ -102,8 +79,8 @@ $ exp stop
 Once you have the correct simulator(s) installed in your platform, firing them up and running your app with them is simple. The hard part is usually installing them. Supposing that you've your simulator(s) correctly installed, starting it is as simple as:
 
 ```sh
-$ exp ios
-$ exp android
+$ exp start --ios
+$ exp start --android
 ```
 
 # Simulators
