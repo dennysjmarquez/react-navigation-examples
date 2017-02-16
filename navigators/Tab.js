@@ -5,11 +5,11 @@ import Stack from './Stack';
 const Tab = TabNavigator(
   {
     Tab1: {
-      screen: Stack
+      screen: Stack,
     },
     Tab2: {
-      screen: DummyScreen
-    }
+      screen: DummyScreen,
+    },
   },
   {
     initialRouteName: 'Tab1',
@@ -22,13 +22,13 @@ const Tab = TabNavigator(
       inactiveBackgroundColor: '#DDD', // iOS
       pressColor: '#e91e63', // Android
       indicatorStyle: { // Android
-        backgroundColor: '#242134'
+        backgroundColor: '#242134',
       },
       style: {
-        backgroundColor: '#EEE' // Android
-      }
-    }
-  }
+        backgroundColor: '#EEE', // Android
+      },
+    },
+  },
 );
 
 export default Tab;

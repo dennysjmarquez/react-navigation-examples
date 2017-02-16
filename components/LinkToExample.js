@@ -13,8 +13,8 @@ const LinkToExample = props => (
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    marginHorizontal: 20
-  }
+    marginHorizontal: 20,
+  },
 });
 
 export default LinkToExample;

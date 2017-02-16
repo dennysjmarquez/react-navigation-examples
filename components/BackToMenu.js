@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
     color: '#3498db',
     fontSize: 16,
     fontWeight: '500',
-    padding: 15
-  }
+    padding: 15,
+  },
 });
 
 export default withNavigation(BackToMenu);

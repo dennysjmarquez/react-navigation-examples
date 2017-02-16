@@ -5,16 +5,16 @@ import OtherScreen from '../screens/stack/OtherScreen';
 const Stack = StackNavigator(
   {
     Stack1: {
-      screen: MainScreen
+      screen: MainScreen,
     },
     Stack2: {
-      screen: OtherScreen
-    }
+      screen: OtherScreen,
+    },
   },
   {
     initialRouteName: 'Stack1',
-    mode: 'card' // 'card' or 'modal'
-  }
+    mode: 'card', // 'card' or 'modal'
+  },
 );
 
 export default Stack;

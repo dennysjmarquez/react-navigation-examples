@@ -18,8 +18,8 @@ FooScreen.navigationOptions = {
     label: 'Drawer2',
     icon: () => (
       <Image source={require('../../assets/images/icon.png')} />
-    )
-  }
+    ),
+  },
 };
 
 const styles = StyleSheet.create({
@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 255, 255, 0.4)',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'stretch'
-  }
+    alignItems: 'stretch',
+  },
 });
 
 export default FooScreen;

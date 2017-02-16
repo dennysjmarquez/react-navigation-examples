@@ -7,22 +7,22 @@ import Drawer from './Drawer';
 const NavigatorMenu = StackNavigator(
   {
     Menu: {
-      screen: MenuScreen
+      screen: MenuScreen,
     },
     StackExample: {
-      screen: Stack
+      screen: Stack,
     },
     TabExample: {
-      screen: Tab
+      screen: Tab,
     },
     DrawerExample: {
-      screen: Drawer
-    }
+      screen: Drawer,
+    },
   },
   {
     initialRouteName: 'Menu',
-    headerMode: 'none'
-  }
+    headerMode: 'none',
+  },
 );
 
 export default NavigatorMenu;

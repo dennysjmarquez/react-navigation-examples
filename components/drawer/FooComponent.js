@@ -10,7 +10,7 @@ class FooComponent extends React.Component {
   }
 
   toggleDrawer() {
-    this.props.navigation.navigate('DrawerOpen')
+    this.props.navigation.navigate('DrawerOpen');
   }
 
   render() {
@@ -42,23 +42,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   image: {
     width: 80,
-    height: 80
+    height: 80,
   },
 
   text: {
     color: '#242134',
     textAlign: 'center',
-    fontSize: 16
+    fontSize: 16,
   },
 
   buttonContainer: {
-    padding: 15
-  }
+    padding: 15,
+  },
 });
 
 export default withNavigation(FooComponent);

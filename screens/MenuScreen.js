@@ -52,7 +52,7 @@ class MenuScreen extends React.Component {
 }
 
 MenuScreen.navigationOptions = {
-  title: 'Menu'
+  title: 'Menu',
 };
 
 const styles = StyleSheet.create({
@@ -63,8 +63,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     borderBottomWidth: 15,
-    borderColor: '#242134'
-  }
+    borderColor: '#242134',
+  },
 });
 
 export default MenuScreen;

@@ -18,22 +18,22 @@ MainScreen.navigationOptions = {
   // title: state => 'Screen 1',
   header: {
     right: <BackToMenu />,
-    tintColor: '#3498db'
+    tintColor: '#3498db',
   },
   // only to Tab navigation example
   tabBar: {
     label: 'Tab1',
     icon: () => (
       <Image source={require('../../assets/images/icon.png')} />
-    )
+    ),
   },
   // only to Drawer navigation example
   drawer: {
     label: 'Drawer1',
     icon: () => (
       <Image source={require('../../assets/images/icon.png')} />
-    )
-  }
+    ),
+  },
 };
 
 const styles = StyleSheet.create({
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 255, 0.4)',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'stretch'
-  }
+    alignItems: 'stretch',
+  },
 });
 
 export default MainScreen;

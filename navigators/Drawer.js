@@ -5,11 +5,11 @@ import Stack from './Stack';
 const Drawer = DrawerNavigator(
   {
     Drawer1: {
-      screen: Stack
+      screen: Stack,
     },
     Drawer2: {
-      screen: FooScreen
-    }
+      screen: FooScreen,
+    },
   },
   {
     initialRouteName: 'Drawer1',
@@ -17,9 +17,9 @@ const Drawer = DrawerNavigator(
       activeTintColor: '#e91e63',
       inactiveTintColor: '#CCC',
       activeBackgroundColor: '#EEE',
-      inactiveBackgroundColor: '#FFF'
-    }
-  }
+      inactiveBackgroundColor: '#FFF',
+    },
+  },
 );
 
 export default Drawer;

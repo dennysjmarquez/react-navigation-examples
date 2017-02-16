@@ -23,20 +23,20 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     justifyContent: 'space-around',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   image: {
     width: 120,
-    height: 120
+    height: 120,
   },
   title: {
     fontSize: 20,
-    fontWeight: '500'
+    fontWeight: '500',
   },
   subtitle: {
     fontSize: 14,
-    fontStyle: 'italic'
-  }
+    fontStyle: 'italic',
+  },
 });
 
 export default MenuHeader;
