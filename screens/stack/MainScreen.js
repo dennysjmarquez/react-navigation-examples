@@ -14,8 +14,14 @@ class MainScreen extends React.Component {
 }
 
 MainScreen.navigationOptions = {
-  title: 'Screen 1',
-  // title: state => 'Screen 1',
+  // title: 'Screen 1',
+  title: (props) => {
+    if (props.state.params) {
+      return `Screen 1 - Hi ${props.state.params.name}`;
+    }
+
+    return 'Screen 1';
+  },
   header: {
     right: <BackToMenu />,
     tintColor: '#3498db',

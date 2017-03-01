@@ -14,6 +14,8 @@ class MainComponent extends React.Component {
   }
 
   render() {
+    const { params } = this.props.navigation.state;
+
     return (
       <View style={styles.container}>
         <Image
@@ -24,6 +26,10 @@ class MainComponent extends React.Component {
 
         <Text style={styles.text}>
           {this.props.text}
+        </Text>
+
+        <Text style={styles.text}>
+          {params ? `You send a param: ${params.name}` : 'You do not send a param'}
         </Text>
 
         <View style={styles.buttonContainer}>

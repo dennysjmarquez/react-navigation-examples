@@ -10,6 +10,7 @@ class MenuScreen extends React.Component {
     this.goToStackNavigationExample = this.goToStackNavigationExample.bind(this);
     this.goToTabNavigationExample = this.goToTabNavigationExample.bind(this);
     this.goToDrawerNavigationExample = this.goToDrawerNavigationExample.bind(this);
+    this.goToStackNavigationParamsExample = this.goToStackNavigationParamsExample.bind(this);
   }
 
   goToStackNavigationExample() {
@@ -22,6 +23,10 @@ class MenuScreen extends React.Component {
 
   goToDrawerNavigationExample() {
     this.props.navigation.navigate('DrawerExample');
+  }
+
+  goToStackNavigationParamsExample() {
+    this.props.navigation.navigate('StackExample', { name: 'Arthur' });
   }
 
   render() {
@@ -45,6 +50,12 @@ class MenuScreen extends React.Component {
           title={'Drawer navigation example'}
           color={'#e74c3c'}
           onPress={this.goToDrawerNavigationExample}
+        />
+
+        <LinkToExample
+          title={'Stack navigation with params example'}
+          color={'#e67e22'}
+          onPress={this.goToStackNavigationParamsExample}
         />
       </View>
     );
