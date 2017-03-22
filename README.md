@@ -10,20 +10,20 @@ https://exp.host/@test123/react-navigation-examples
 
 ## Install Guide
 
-##### Install Exponent CLI Client:
+##### Install Expo CLI Client:
 _(https://www.npmjs.com/package/exp)_
 
 ```sh
 $ npm install -g exp
 ```
 
-##### Signup for an Exponent account:
+##### Signup for an Expo account:
 
 ```sh
 $ exp signup
 ```
 
-##### Login to exponent:
+##### Login to Expo:
 
 ```sh
 $ exp login
@@ -33,13 +33,13 @@ $ exp w  # who am I?
 ##### Clone this repo
 
 ```sh
-$ git clone https://github.com/rmotr/react-native-exponent-seed.git
+$ git clone https://github.com/rmotr/react-navigation-examples.git
 ```
 
 ##### Install dependencies:
 
 ```sh
-$ cd react-native-exponent-seed
+$ cd react-navigation-examples
 $ npm install -d
 ```
 
