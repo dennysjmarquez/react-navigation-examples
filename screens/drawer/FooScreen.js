@@ -20,6 +20,9 @@ FooScreen.navigationOptions = {
       <Image source={require('../../assets/images/icon.png')} />
     ),
   },
+  cardStack: {
+    gesturesEnabled: false,
+  },
 };
 
 const styles = StyleSheet.create({

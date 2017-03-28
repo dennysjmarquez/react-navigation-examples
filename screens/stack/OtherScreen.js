@@ -20,6 +20,9 @@ OtherScreen.navigationOptions = {
     right: <BackToMenu />,
     tintColor: '#3498db',
   },
+  cardStack: {
+    gesturesEnabled: false,
+  },
   // only to Tab navigation example
   tabBar: {
     label: 'Tab1',
