@@ -15,28 +15,21 @@ class OtherScreen extends React.Component {
 
 OtherScreen.navigationOptions = {
   title: 'Screen 2',
-  // title: state => 'Screen 2',
-  header: {
-    right: <BackToMenu />,
-    tintColor: '#3498db',
-  },
-  cardStack: {
-    gesturesEnabled: false,
-  },
+  headerRight: <BackToMenu />,
+  headerTintColor: '#3498db',
+  gesturesEnabled: false,
+
   // only to Tab navigation example
-  tabBar: {
-    label: 'Tab1',
-    icon: () => (
-      <Image source={require('../../assets/images/icon.png')} />
-    ),
-  },
+  tabBarLabel: 'Tab1',
+  tabBarIcon: () => (
+    <Image source={require('../../assets/images/icon.png')} />
+  ),
+
   // only to Drawer navigation example
-  drawer: {
-    label: 'Drawer1',
-    icon: () => (
-      <Image source={require('../../assets/images/icon.png')} />
-    ),
-  },
+  drawerLabel: 'Drawer1',
+  drawerIcon: () => (
+    <Image source={require('../../assets/images/icon.png')} />
+  ),
 };
 
 const styles = StyleSheet.create({

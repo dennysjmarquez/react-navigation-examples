@@ -64,6 +64,7 @@ class MenuScreen extends React.Component {
 
 MenuScreen.navigationOptions = {
   title: 'Menu',
+  gesturesEnabled: false,
 };
 
 const styles = StyleSheet.create({

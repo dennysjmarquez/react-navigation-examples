@@ -13,6 +13,7 @@ const Drawer = DrawerNavigator(
   },
   {
     initialRouteName: 'Drawer1',
+    drawerPosition: 'left',
     contentOptions: {
       activeTintColor: '#e91e63',
       inactiveTintColor: '#CCC',

@@ -13,16 +13,11 @@ class FooScreen extends React.Component {
 }
 
 FooScreen.navigationOptions = {
-  // title: 'Drawer2',
-  drawer: {
-    label: 'Drawer2',
-    icon: () => (
-      <Image source={require('../../assets/images/icon.png')} />
-    ),
-  },
-  cardStack: {
-    gesturesEnabled: false,
-  },
+  drawerLabel: 'Drawer2',
+  drawerIcon: () => (
+    <Image source={require('../../assets/images/icon.png')} />
+  ),
+  gesturesEnabled: false,
 };
 
 const styles = StyleSheet.create({

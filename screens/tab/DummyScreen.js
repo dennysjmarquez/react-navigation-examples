@@ -13,16 +13,11 @@ class DummyScreen extends React.Component {
 }
 
 DummyScreen.navigationOptions = {
-  // title: 'Tab2'
-  tabBar: {
-    label: 'Tab2',
-    icon: () => (
-      <Image source={require('../../assets/images/icon.png')} />
-    ),
-  },
-  cardStack: {
-    gesturesEnabled: false,
-  },
+  tabBarLabel: 'Tab2',
+  tabBarIcon: () => (
+    <Image source={require('../../assets/images/icon.png')} />
+  ),
+  gesturesEnabled: false,
 };
 
 const styles = StyleSheet.create({

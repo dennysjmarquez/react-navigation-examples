@@ -5,7 +5,9 @@ import Menu from './navigators/Menu';
 class App extends React.Component {
   render() {
     return (
-      <Menu />
+      <Menu
+        onNavigationStateChange={() => ({ /* don't show navigation change logs */ })}
+      />
     );
   }
 }

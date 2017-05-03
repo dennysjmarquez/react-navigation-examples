@@ -13,36 +13,31 @@ class MainScreen extends React.Component {
   }
 }
 
-MainScreen.navigationOptions = {
-  // title: 'Screen 1',
-  title: (props) => {
-    if (props.state.params) {
-      return `Screen 1 - Hi ${props.state.params.name}`;
-    }
+MainScreen.navigationOptions = ({ navigation }) => {
+  const { params } = navigation.state;
 
-    return 'Screen 1';
-  },
-  header: {
-    right: <BackToMenu />,
-    tintColor: '#3498db',
-  },
-  cardStack: {
+  const title = params ?
+                `Screen 1 - Hi ${params.name}` :
+                'Screen 1';
+
+  return {
+    title,
+    headerRight: <BackToMenu />,
+    headerTintColor: '#3498db',
     gesturesEnabled: false,
-  },
-  // only to Tab navigation example
-  tabBar: {
-    label: 'Tab1',
-    icon: () => (
+
+    // only to Tab navigation example
+    tabBarLabel: 'Tab1',
+    tabBarIcon: () => (
       <Image source={require('../../assets/images/icon.png')} />
     ),
-  },
-  // only to Drawer navigation example
-  drawer: {
-    label: 'Drawer1',
-    icon: () => (
+
+    // only to Drawer navigation example
+    drawerLabel: 'Drawer1',
+    drawerIcon: () => (
       <Image source={require('../../assets/images/icon.png')} />
     ),
-  },
+  };
 };
 
 const styles = StyleSheet.create({

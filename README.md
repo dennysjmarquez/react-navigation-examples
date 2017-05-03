@@ -8,6 +8,12 @@ https://exp.host/@rmotr/react-navigation-examples
   <img src="http://i.imgur.com/ywdkCOT.jpg">
 </p>
 
+<p align='center'>
+  <a href="https://exp.host/@rmotr/react-navigation-examples">
+    <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=https%3A%2F%2Fexpo.io%2F%40rmotr%2Freact-navigation-examples&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="qr code" />
+  </a>
+</p>
+
 ## Install Guide
 
 ##### Install Expo CLI Client:
