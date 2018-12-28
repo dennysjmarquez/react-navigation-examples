@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "React-navigation examples",
+    "description": "Examples to setup a project with react-navigation",
+    "slug": "react-navigation-examples",
+    "privacy": "public",
+    "sdkVersion": "30.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }  
+}
