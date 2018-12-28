@@ -1,8 +1,8 @@
-import { TabNavigator } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import DummyScreen from '../screens/tab/DummyScreen';
 import Stack from './Stack';
 
-const Tab = TabNavigator(
+const Tab = createBottomTabNavigator(
   {
     Tab1: {
       screen: Stack,

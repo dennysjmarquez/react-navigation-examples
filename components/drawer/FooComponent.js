@@ -10,18 +10,12 @@ class FooComponent extends React.Component {
   }
 
   toggleDrawer() {
-    this.props.navigation.navigate('DrawerOpen');
+    this.props.navigation.openDrawer();
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.image}
-          source={require('../../assets/images/logo.png')}
-          alt={'logo'}
-        />
-
         <Text style={styles.text}>
           {this.props.text}
         </Text>

@@ -16,12 +16,6 @@ class OtherComponent extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.image}
-          source={require('../../assets/images/logo.png')}
-          alt={'logo'}
-        />
-
         <Text style={styles.text}>
           {this.props.text}
         </Text>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableHighlight, StyleSheet } from 'react-native';
-import { withNavigation } from 'react-navigation';
+import { Util } from 'expo';
 
 class BackToMenu extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class BackToMenu extends React.Component {
 
   goToMenu() {
     // Go back anywhere
-    this.props.navigation.navigate('Menu');
+    Util.reload();
   }
 
   render() {
@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withNavigation(BackToMenu);
+export default BackToMenu;

@@ -1,16 +1,15 @@
 {
   "name": "react-navigation-examples",
-  "version": "0.0.0",
   "description": "Examples to setup a project with react-navigation",
+  "version": "0.0.0",
   "author": null,
+  "main": "node_modules/expo/AppEntry.js",
   "private": true,
-  "main": "main.js",
   "dependencies": {
-    "@expo/vector-icons": "~4.0.0",
-    "expo": "^16.0.0",
-    "react": "16.0.0-alpha.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-16.0.0.tar.gz",
-    "react-navigation": "1.0.0-beta.9"
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-navigation": "^2.18.0"
   },
   "devDependencies": {
     "eslint": "^3.15.0",

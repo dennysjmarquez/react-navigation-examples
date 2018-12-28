@@ -17,7 +17,7 @@ OtherScreen.navigationOptions = {
   title: 'Screen 2',
   headerRight: <BackToMenu />,
   headerTintColor: '#3498db',
-  gesturesEnabled: false,
+  gesturesEnabled: true,
 
   // only to Tab navigation example
   tabBarLabel: 'Tab1',

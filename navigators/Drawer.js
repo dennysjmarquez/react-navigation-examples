@@ -1,8 +1,8 @@
-import { DrawerNavigator } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation';
 import FooScreen from '../screens/drawer/FooScreen';
 import Stack from './Stack';
 
-const Drawer = DrawerNavigator(
+const Drawer = createDrawerNavigator(
   {
     Drawer1: {
       screen: Stack,

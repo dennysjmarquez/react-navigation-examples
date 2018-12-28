@@ -1,8 +1,8 @@
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import MainScreen from '../screens/stack/MainScreen';
 import OtherScreen from '../screens/stack/OtherScreen';
 
-const Stack = StackNavigator(
+const Stack = createStackNavigator(
   {
     Stack1: {
       screen: MainScreen,
