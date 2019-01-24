@@ -4,6 +4,8 @@ Interactive react-navigation examples.
 
 https://expo.io/@rmotr/react-navigation-examples
 
-![QR](https://user-images.githubusercontent.com/7065401/51684288-78ad7800-1fca-11e9-8d0e-60540bcc2793.png)
+![qr](https://user-images.githubusercontent.com/7065401/51691962-a3073180-1fda-11e9-9b71-555282fa8359.png)
+
+https://snack.expo.io/@rmotr/cmVhY3
 
 ![image](https://user-images.githubusercontent.com/7065401/51684021-e60cd900-1fc9-11e9-9cb1-f2bc73f61081.png)
